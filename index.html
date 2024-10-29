@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Intro</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
+</head>
+<body>
+  <div id="app">
+    <h1>Hello Vue</h1>
+    <input type="text" v-model="name">
+    <p>{{name}}</p>
+    <ul>
+      <li v-for="framework in frameworks">{{framework}}</li>
+    </ul>
+    <p>{{frameworks}}</p>
+  </div>
+  <!-- <script>
+    const app = new Vue({
+      el:"#app",
+      data: {
+        name:"Jise Park"
+      }
+    })
+  </script> -->
+  <script>
+    const { createApp } = Vue
+  
+    createApp({
+      data() {
+        return {
+          name: 'Jise Park',
+          frameworks:["React","Vue","Angular"],
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>
