@@ -13,7 +13,13 @@
     <p v-bind:style="{color:'red',fontSize:`${basicSize}px`}">V-bind Test</p>
     <h1 v-bind:style="titleStyle">Hello World{{ userName }}</h1>
     <h1 v-bind:style="[titleStyle,basicStyle]">Hello World{{ userName }}</h1>
-
+    <h2 :class="textDecoration" class="text-orange">Line-through</h2>
+    <h2 :class="isDone === true ? 'line-through' : 'highlight'">Line-through</h2>
+    <h2 :class="{highlight : isDone === true}">Object형태의 동적 클래스</h2>
+    <h2 :class="{
+      highlight : isDone === true,
+      'text-orange' : userName === 'parkjise'}">Object형태의 동적 클래스</h2>
+      <h2 :class="[isDone===true ? 'line-through' : 'highlight',userName === 'parkjise' ? 'text-green' : 'highlight']">Array 형태의 동적 클래스 부여</h2>
   </div>
 </template>
 
@@ -47,9 +53,18 @@ export default {
         fontSize:'120px',
         color:'blue',
         border:"1px solid red"
-      }
+      },
+      textDecoration:'line-through',
+      isDone:false
     };
   },
+  // methods: {
+  //   isDoneT(){
+  //     if(this.isDone === true){
+  //       return highlight
+  //     }
+  //   }
+  // },
 };
 </script>
 
@@ -61,5 +76,20 @@ export default {
   #content{
     background:pink;
     color:white;
+  }
+
+  .line-through{
+    text-decoration: line-through;
+  }
+
+  .highlight{
+    color: #fff;
+    background-color: #000;
+  }
+  .text-orange{
+    color: orange;
+  }
+  .text-green{
+    color: green;
   }
 </style>
