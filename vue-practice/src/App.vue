@@ -1,16 +1,16 @@
 <script>
 
-import ConRendering from './components/ConditionalRendering.vue'
+import ConditionalRendering02 from './components/ConditionalRendering02.vue'
 
 export default {
     components:{
-      ConRendering
+      ConditionalRendering02
     },
   }
 </script>
 
 <template>
-  <con-rendering></con-rendering>
+  <conditional-rendering02></conditional-rendering02>
 </template>
 
 
