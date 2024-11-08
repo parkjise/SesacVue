@@ -1,16 +1,16 @@
 <script>
 
-import ConditionalRendering02 from './components/ConditionalRendering02.vue'
+import MethodsVue from './components/MethodsVue.vue'
 
 export default {
     components:{
-      ConditionalRendering02
+      MethodsVue
     },
   }
 </script>
 
 <template>
-  <conditional-rendering02></conditional-rendering02>
+  <methods-vue></methods-vue>
 </template>
 
 
