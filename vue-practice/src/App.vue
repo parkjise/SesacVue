@@ -1,20 +1,15 @@
 <script>
-
-import MethodsVue from './components/MethodsVue.vue'
+import FormHandling from "./components/FormHandling.vue";
 
 export default {
-    components:{
-      MethodsVue
-    },
-  }
+	components: {
+		FormHandling,
+	},
+};
 </script>
 
 <template>
-  <methods-vue></methods-vue>
+	<form-handling></form-handling>
 </template>
 
-
-
-<style>
-  
-</style>
+<style></style>
