@@ -30,7 +30,7 @@
       mounted(el){
         console.log({el})
         el.oninput = () => {
-          el.style.background = "sallmon";
+          el.style.background = "salmon";
           el.style.color = "#fff";
         }
       }
