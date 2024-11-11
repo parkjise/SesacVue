@@ -1,15 +1,15 @@
 <script>
-import FormHandling from "./components/FormHandling.vue";
+import DirectivesVue from "./components/DirectivesVue.vue";
 
 export default {
 	components: {
-		FormHandling,
+		DirectivesVue,
 	},
 };
 </script>
 
 <template>
-	<form-handling></form-handling>
+	<directives-vue></directives-vue>
 </template>
 
 <style></style>
