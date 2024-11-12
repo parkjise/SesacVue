@@ -1,15 +1,15 @@
 <script>
-import DirectivesVue from "./components/DirectivesVue.vue";
+import ComputedVue from "./components/ComputedVue.vue";
 
 export default {
 	components: {
-		DirectivesVue,
+		ComputedVue,
 	},
 };
 </script>
 
 <template>
-	<directives-vue></directives-vue>
+	<computed-vue></computed-vue>
 </template>
 
 <style></style>
